@@ -4,6 +4,9 @@ nav img{
 body{
     background-color: rgb(246, 246, 246);;
 }
+.fotoPablo{
+  width: 100%;
+}
 .imgBienvenida{
   width: 100%;
   min-height: 11em;
