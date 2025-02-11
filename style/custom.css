@@ -1,0 +1,30 @@
+nav img{
+    width: 4em;
+}
+body{
+    background-color: rgb(246, 246, 246);;
+}
+.imgBienvenida{
+  width: 100%;
+  min-height: 11em;
+}
+.rBienvenida{
+background-color: rgb(246, 246, 246);
+}
+.lead{
+    text-align: justify;
+}
+.ocultos{
+    display: none;
+}
+.visibles{
+    display: block;
+}
+/* From Uiverse.io by xueyuantan */ 
+
+  
+  p {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  
