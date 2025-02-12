@@ -23,8 +23,10 @@ background-color: rgb(246, 246, 246);
 .visibles{
     display: block;
 }
-/* From Uiverse.io by xueyuantan */ 
-
+.mensaje {
+  color: green;
+  display: none;
+}
   
 
 

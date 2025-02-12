@@ -39,7 +39,7 @@
                   <a class="nav-link" href="proyectos.html">Proyectos</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contacto</a>
+                  <a class="nav-link" href="#contacto">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -198,9 +198,12 @@
             </h2>
             <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
               <div class="accordion-body">
-                <strong>Septiembre 2023 - Mayo 2025</strong> Después de un tiempo buscando nuevos retos, me aventuré en 2023 en realizar este grado en Desarrollo web, en la modalidad de distancia, en el instituto Carlos III<br>
-                Comencé realizando actividades tanto con Java como en SQL en primero, aprendiendo las bases de la programación y su lógica, lo que dio paso al segundo curso donde se profundiza en la web.
-                
+                <strong>Septiembre 2023 - Mayo 2025</strong> Después de un tiempo buscando nuevos retos, me aventuré en
+                2023 en realizar este grado en Desarrollo web, en la modalidad de distancia, en el instituto Carlos
+                III<br>
+                Comencé realizando actividades tanto con Java como en SQL en primero, aprendiendo las bases de la
+                programación y su lógica, lo que dio paso al segundo curso donde se profundiza en la web.
+
               </div>
             </div>
           </div>
@@ -307,7 +310,8 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                Código en PHP orientado a mostrar un proyecto de Programación orientada a Objetos, basado en un carrito de la compra de un cliente
+                Código en PHP orientado a mostrar un proyecto de Programación orientada a Objetos, basado en un carrito
+                de la compra de un cliente
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -323,10 +327,32 @@
         <a href="proyectos.html">
           <button class="mostrarMas btn btn-primary">Clica para ver más proyectos</button>
         </a>
-        
+
       </div>
     </div>
-
+    <div class="row">
+      <div class="col-12 text-center">
+        <h3 class="m-3">Formulario de contacto</h3>
+      </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-7 col-11">
+        <form  class="formulario" id="contacto">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <p class="mensaje text-center" id="mensajeExito">✅ ¡Mensaje enviado con éxito!</p>
+          </div>
+        </form>
+      </div>
+    </div>
     <footer class="row">
       <div class="col-12 text-center">
         <p class="small m-5">Pablo Expósito Martínez - 2025</p>
