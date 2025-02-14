@@ -1,0 +1,60 @@
+ 
+
+$bk-color-html: rgb(246, 246, 246);
+$width100: 100%; 
+$min-height_img_pc: 11em; 
+$justify_text: justify; 
+$d-none: none; 
+$d-block: block; 
+$color-btn-blue: rgb(116, 158, 248);
+$max-height-p-project: 5em; 
+
+
+body{
+    background-color: $bk-color-html;
+}
+.fotoPablo{
+    width: $width100;
+}
+.imgBienvenida{
+    width: $width100;
+    min-height: $min-height_img_pc;
+}
+.lead{
+    text-align: $justify_text;
+}
+.ocultos{
+    transition: all 3s;
+    display: $d-none;
+}
+.visibles{
+    transition: all 10s;
+    display: $d-block;
+}
+
+.btn-primary{
+    background-color: $color-btn-blue;
+}
+.pProyecto{
+    min-height: $max-height-p-project;
+}
+//Animaciones
+.card:hover{
+    transform: scale(1.1,1.1);
+
+}
+button:hover{
+    transform: scale(1.1, 1.1);
+}
+
+nav{
+    animation: nav-aparicion 0.8s ease-in-out;
+  }
+  @keyframes nav-aparicion{
+    0%{
+      transform: translateY(-50px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  }

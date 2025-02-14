@@ -1,0 +1,55 @@
+body {
+  background-color: rgb(246, 246, 246);
+}
+
+.fotoPablo {
+  width: 100%;
+}
+
+.imgBienvenida {
+  width: 100%;
+  min-height: 11em;
+}
+
+.lead {
+  text-align: justify;
+}
+
+.ocultos {
+  transition: all 3s;
+  display: none;
+}
+
+.visibles {
+  transition: all 10s;
+  display: block;
+}
+
+.btn-primary {
+  background-color: rgb(116, 158, 248);
+}
+
+.pProyecto {
+  min-height: 5em;
+}
+
+.card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.btn:hover {
+  transform: scale(1.1, 1.1);
+}
+
+nav {
+  animation: nav-aparicion 0.8s ease-in-out;
+}
+
+@keyframes nav-aparicion {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}/*# sourceMappingURL=styles.css.map */

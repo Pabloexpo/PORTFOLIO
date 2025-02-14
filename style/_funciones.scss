@@ -1,0 +1,16 @@
+
+$red: random(150) + 50; // R entre 50 y 200
+$green: random(150) + 50; // G entre 50 y 200
+$blue: random(30) + 220; // Azul superior a 220)
+@for $i from 1 through 4{
+    .accordion-header :nth-child(#{$i}){
+        background-color: rgb($red, $green, $blue);
+        @if $blue>240{
+            color: white;
+        } @else if ($red>180){
+            color:white; 
+        } @else if ($green>180){
+            color: white;
+        }
+    }
+}

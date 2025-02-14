@@ -12,8 +12,9 @@ fetch(url)
 let select = document.querySelector('#select'); 
 select.addEventListener('change', filtrar); 
 //Seleccionamos el buton para buscar y volvemos a filtrar
+let input = document.querySelector('#input'); 
 let btnBuscar= document.querySelector('.buscar'); 
-btnBuscar.addEventListener('click', buscar); 
+input.addEventListener('input', buscar); 
 function mostrarDatos(datos){
     console.log(datos)
     //Para cada repositorio, generaremos un article que se incluirá luego al section  
@@ -26,7 +27,7 @@ function mostrarDatos(datos){
                 <div class="card h-100 shadow">
                     <div class="card-body">
                         <h5 class="card-title">${dato.name}</h5>
-                        <p class="">${dato.description || "Sin descripción"}</p>
+                        <p class="pProyecto">${dato.description || "Sin descripción"}</p>
                         <a href="${dato.html_url}" target="_blank" class="btn btn-primary">Ver Proyecto</a>
                     </div>
                 </div>
@@ -37,7 +38,6 @@ function mostrarDatos(datos){
     });
 }
 function buscar(e){
-    let input = document.querySelector('#input'); 
     let valor = input.value; 
     //console.log(valor)
     let busqueda = datosTotales.filter (dato => {
@@ -45,8 +45,7 @@ function buscar(e){
             return dato.name
         } 
     })
-    mostrarDatos(busqueda)
-    input.value=''; 
+    mostrarDatos(busqueda) 
 }
 function filtrar(e){
     let valor = e.target.value; 
